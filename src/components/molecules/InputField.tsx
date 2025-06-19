@@ -22,7 +22,7 @@ export default function InputField({ label, type, name, value, placeholder, onCh
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        className='rounded-lg border border-[var(--color-shades-800)] bg-secondary-1 p-4 text-[var(--color-shades-900)] placeholder:text-[var(--color-shades-800)]'
+        className='rounded-lg border border-[var(--color-shades-800)] bg-secondary-1 p-4 text-[var(--color-shades-900)] placeholder:text-[var(--color-shades-800)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]'
       />
     </div>
   );
