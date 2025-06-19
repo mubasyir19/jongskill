@@ -4,35 +4,55 @@ import React from 'react';
 
 export default function Sidebar() {
   return (
-    <aside className='w-60 py-6'>
+    <aside className='hidden w-40 lg:w-40 xl:w-72 py-6 lg:flex flex-col justify-between'>
       <div className='mt-9'>
-        <Image src={'/images/logo.png'} width={280} height={280} alt='logo' className='size-16 mx-auto' />
-        <h3 className='text-2xl text-center font-bold text-[var(--color-primary)]'>
-          Jong<span className='mt-1 text-white'>Skill</span>
-        </h3>
-        <div className='flex flex-col gap-4 pl-6 mt-10'>
+        <div className='flex flex-col xl:flex-row justify-center items-center gap-2'>
+          <Image src={'/images/logo.png'} width={280} height={280} alt='logo' className='size-16' />
+          <div className=''>
+            <h3 className='text-base text-center xl:text-start md:text-lg lg:text-xl xl:text-2xl font-bold text-[var(--color-primary)]'>
+              My<span className='mt-1 text-white'>Skill</span>
+            </h3>
+            <p className='text-xs text-center xl:text-start text-white/70'>Skill Up, Ignite Change</p>
+          </div>
+        </div>
+        <div className='flex flex-col gap-4 pl-2 lg:pl-3 xl:pl-6 mt-10'>
           <Link
             href={`#`}
-            className='text-white text-xl bg-[var(--color-primary)] font-semibold rounded-l-full flex items-center gap-6 py-5 pl-5'
+            className='text-white text-xs md:text-sm lg:text-base xl:text-xl bg-[var(--color-primary)] font-semibold rounded-l-full flex items-center gap-2 lg:gap-3 xl:gap-6 py-2 lg:py-3 xl:py-5 pl-2 lg:pl-3 xl:pl-5'
           >
             <Image src={`/icons/ic-home.svg`} width={20} height={20} alt='icon' className='size-5' />
             Home
           </Link>
           <Link
             href={`#`}
-            className='text-white text-xl font-semibold rounded-l-full flex items-center gap-6 py-5 pl-5'
+            className='text-white text-xs md:text-sm lg:text-base xl:text-xl font-semibold rounded-l-full flex items-center gap-2 lg:gap-3 xl:gap-6 py-2 lg:py-3 xl:py-5 pl-2 lg:pl-3 xl:pl-5 hover:bg-[var(--color-primary)] transition-all duration-100'
           >
             <Image src={`/icons/ic-course.svg`} width={20} height={20} alt='icon' className='size-5' />
             Courses
           </Link>
           <Link
             href={`#`}
-            className='text-white text-xl font-semibold rounded-l-full flex items-center gap-6 py-5 pl-5'
+            className='text-white text-xs md:text-sm lg:text-base xl:text-xl font-semibold rounded-l-full flex items-center gap-2 lg:gap-3 xl:gap-6 py-2 lg:py-3 xl:py-5 pl-2 lg:pl-3 xl:pl-5 hover:bg-[var(--color-primary)] transition-all duration-100'
           >
             <Image src={`/icons/ic-message.svg`} width={20} height={20} alt='icon' className='size-5' />
             Messages
           </Link>
         </div>
+      </div>
+      <div className='relative overflow-hidden mx-3 xl:mx-6 h-72 rounded-b-4xl'>
+        <p className='font-medium text-lg text-white'>Support 24/7</p>
+        <p className='mt-2 text-white/50 text-sm'>Contact us anytime</p>
+        <button className='mt-6 bg-[var(--color-primary)] font-bold text-sm text-white rounded-lg cursor-pointer py-2 px-2.5'>
+          Start
+        </button>
+        <Image
+          src={'/images/animation.png'}
+          width={124}
+          height={175}
+          alt='vector'
+          className='absolute w-20 h-32 xl:w-32 xl:h-44 bottom-5 right-8 xl:bottom-10 z-10 xl:right-16'
+        />
+        <div className='absolute -bottom-48 -right-40 xl:-bottom-36 xl:-right-20 z-0 bg-white/20 size-80 rounded-full'></div>
       </div>
     </aside>
   );

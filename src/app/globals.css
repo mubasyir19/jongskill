@@ -13,9 +13,12 @@
   --color-shades-400: #b3b3b3;
   --color-shades-300: #d1d1d1;
   --color-shades-200: #ededed;
+  --color-shades-100: #f7f8fa;
   --color-success: #6fcf97;
   --color-warning: #f2994a;
   --color-error: #dc1500;
   --color-info: #1477f8;
+  --color-title: #102844;
+  --color-paragraph: #767278;
   --bg-auth: url('/images/auth.png');
 }
