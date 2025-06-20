@@ -9,7 +9,9 @@ export default function MainDashboardPage() {
       <div className='flex items-center justify-between'>
         <div className=''>
           <p className='text-base text-[var(--color-shades-600)]'>Hello Mahdy, Welcome back.</p>
-          <h3 className='font-semibold text-[28px] text-[var(--color-secondary)]'>Your Dashboard today</h3>
+          <h3 className='font-semibold md:text-xl lg:text-2xl xl:text-[28px] text-[var(--color-secondary)]'>
+            Your Dashboard today
+          </h3>
         </div>
         <div className='flex items-center gap-3'>
           <Image src={`/images/user.jpg`} width={100} height={100} alt='profile' className='size-10 rounded-full' />
@@ -19,7 +21,7 @@ export default function MainDashboardPage() {
           </div>
         </div>
       </div>
-      <section className='mt-4 grid grid-cols-4 gap-4'>
+      <section className='mt-4 grid grid-cols-2 lg:grid-cols-4 gap-4'>
         <div className='bg-[var(--color-shades-100)] rounded-2xl py-6 px-4'>
           <div className='flex items-center gap-4'>
             <div className='bg-gradient-to-t from-[#17E783] to-[#20AF62] size-12 xl:size-16 flex items-center justify-center rounded-full'>
@@ -207,7 +209,7 @@ export default function MainDashboardPage() {
               See all
             </button>
           </div>
-          <div className='mt-6 grid grid-cols-2 gap-4'>
+          <div className='mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4'>
             <div className='bg-[var(--color-shades-100)] rounded-2xl p-6'>
               <div className='flex items-center gap-5'>
                 <Image
