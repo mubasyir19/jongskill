@@ -8,7 +8,7 @@ interface InputFieldProps {
   placeholder?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
-  error: string;
+  error?: string;
 }
 
 export default function InputField({ label, type, name, value, placeholder, onChange, error }: InputFieldProps) {
@@ -26,9 +26,10 @@ export default function InputField({ label, type, name, value, placeholder, onCh
         className={`rounded-lg border p-4 text-[var(--color-shades-900)] placeholder:text-[var(--color-shades-800)] focus:outline-none ${
           error
             ? 'border-[var(--color-error)] focus:ring-[var(--color-error)] focus:border-[var(--color-error)]'
-            : 'border-[var(--color-shades-800)] focus:ring-2 focus:ring-[var(--color-primary)]'
+            : 'border-[var(--color-shades-800)] focus:border-[var(--color-primary)] focus:ring focus:ring-[var(--color-primary)]'
         }`}
       />
+      {error && <p className='mt-0.5 text-sm text-[var(--color-error)]'>{error}</p>}
     </div>
   );
 }
