@@ -1,3 +1,146 @@
+export const unfinishedCourse = [
+  {
+    id: '1',
+    thumbnail: 'course-1.png',
+    tag: 'Digital Marketing',
+    title: 'Digital Marketing Pro: Mastering the Online Landscape',
+    lessons: [
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 1',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 2',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 3',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 4',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 5',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 6',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 7',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 8',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 9',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 10',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 11',
+        duration: 15,
+      },
+    ],
+    duration: 165,
+    price: 159,
+    mentor: {
+      photoProfile: 'user.jpg',
+      name: 'Mahdy Mubasyir',
+      socmed: 'mubasyirmahdy',
+    },
+  },
+  {
+    id: '2',
+    thumbnail: 'course-2.png',
+    tag: 'Design',
+    title: 'Digital Dynamo: Unleash Your Online Potential',
+    lessons: [
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 1',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 2',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 3',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 4',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 5',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 6',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 7',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 8',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 9',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 10',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 11',
+        duration: 15,
+      },
+    ],
+    duration: 165,
+    price: 130,
+    mentor: {
+      photoProfile: 'user.jpg',
+      name: 'Mahdy Mubasyir',
+      socmed: 'mubasyirmahdy',
+    },
+  },
+];
+
 export const DataCourse = [
   {
     id: '1',

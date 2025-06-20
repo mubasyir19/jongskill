@@ -1,3 +1,5 @@
+import UnfinishedCard from '@/components/organism/UnfinishedCard';
+import { unfinishedCourse } from '@/data/data';
 import Image from 'next/image';
 import React from 'react';
 
@@ -95,79 +97,18 @@ export default function MainDashboardPage() {
               See all
             </button>
           </div>
-          <div className='mt-4 grid grid-cols-2 gap-4 h-96'>
-            <div className='relative self-stretch h-full'>
-              <Image
-                src={'/images/course-1.png'}
-                width={395}
-                height={390}
-                alt='course'
-                className='absolute inset-0 w-full h-full object-cover rounded-2xl'
+          <div className='mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4 h-96'>
+            {unfinishedCourse.map((uc) => (
+              <UnfinishedCard
+                key={uc.id}
+                thumbnail={uc.thumbnail}
+                photoMentor={uc.mentor.photoProfile}
+                nameMentor={uc.mentor.name}
+                socmedMentor={uc.mentor.socmed}
+                duration={uc.duration}
+                titleCourse={uc.title}
               />
-              <div className='absolute inset-0 p-2 lg:p-4 xl:p-6 bg-gradient-to-b from-black/50 to-[#FBFBFB]/30 rounded-2xl flex flex-col justify-between'>
-                <div className='flex items-center justify-between'>
-                  <div className='flex items-center gap-4'>
-                    <Image
-                      src={`/images/user.jpg`}
-                      width={100}
-                      height={100}
-                      alt='profile'
-                      className='size-6 md:size-8 lg:size-10 xl:size-12 rounded-full border-2 border-[var(--color-primary)]'
-                    />
-                    <div className=''>
-                      <p className='font-semibold text-white text-xs md:text-sm lg:text-base xl:text-lg'>
-                        Mahdy Mubasyir
-                      </p>
-                      <p className='text-xs xl:text-sm text-white'>@mubasyirmahdy</p>
-                    </div>
-                  </div>
-                  <button className='bg-[var(--color-secondary)] rounded-lg text-center text-white text-xs xl:text-base font-bold py-1 px-1.5 lg:py-2 xl:py-2.5 lg:px-2 xl:px-4'>
-                    76 min
-                  </button>
-                </div>
-                <div className='bg-[#99A7A2]/50 backdrop-blur-sm rounded-2xl py-4 px-6'>
-                  <p className='text-white text-sm md:text-base lg:text-xl xl:text-2xl font-medium'>
-                    Digital Marketing Pro: Mastering the Online Landscape
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='relative self-stretch h-full'>
-              <Image
-                src={'/images/course-2.png'}
-                width={395}
-                height={390}
-                alt='course'
-                className='absolute inset-0 w-full h-full object-cover rounded-2xl'
-              />
-              <div className='absolute inset-0 p-2 lg:p-4 xl:p-6 bg-gradient-to-b from-black/50 to-[#FBFBFB]/30 rounded-2xl flex flex-col justify-between'>
-                <div className='flex items-center justify-between'>
-                  <div className='flex items-center gap-4'>
-                    <Image
-                      src={`/images/user.jpg`}
-                      width={100}
-                      height={100}
-                      alt='profile'
-                      className='size-6 md:size-8 lg:size-10 xl:size-12 rounded-full border-2 border-[var(--color-primary)]'
-                    />
-                    <div className=''>
-                      <p className='font-semibold text-white text-xs md:text-sm lg:text-base xl:text-lg'>
-                        Mahdy Mubasyir
-                      </p>
-                      <p className='text-xs xl:text-sm text-white'>@mubasyirmahdy</p>
-                    </div>
-                  </div>
-                  <button className='bg-[var(--color-secondary)] rounded-lg text-center text-white text-xs xl:text-base font-bold py-1 px-1.5 lg:py-2 xl:py-2.5 lg:px-2 xl:px-4'>
-                    82 min
-                  </button>
-                </div>
-                <div className='bg-[#99A7A2]/50 backdrop-blur-sm rounded-2xl py-4 px-6'>
-                  <p className='text-white text-sm md:text-base lg:text-xl xl:text-2xl font-medium'>
-                    Digital Dynamo: Unleash Your Online Potential
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className='w-52 lg:w-60 xl:w-96 h-full flex flex-col'>
