@@ -141,6 +141,149 @@ export const unfinishedCourse = [
   },
 ];
 
+export const PopularCourse = [
+  {
+    id: '1',
+    thumbnail: 'course-3.png',
+    tag: 'Digital Marketing',
+    title: 'Digital Marketing Ethics: Navigating the Ethical Landscape',
+    lessons: [
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 1',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 2',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 3',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 4',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 5',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 6',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 7',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 8',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 9',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 10',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 11',
+        duration: 15,
+      },
+    ],
+    duration: 165,
+    price: 159,
+    mentor: {
+      photoProfile: 'user.jpg',
+      name: 'Evan Lindsey',
+      socmed: 'mubasyirmahdy',
+    },
+  },
+  {
+    id: '2',
+    thumbnail: 'course-7.png',
+    tag: 'Digital Marketing',
+    title: 'Pay-Per-Click Powerhouse: Crafting Profitable Campaigns',
+    lessons: [
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 1',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 2',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 3',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 4',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 5',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 6',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 7',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 8',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 9',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 10',
+        duration: 15,
+      },
+      {
+        id: '2345-4244-6784',
+        title: 'lesson 11',
+        duration: 15,
+      },
+    ],
+    duration: 165,
+    price: 130,
+    mentor: {
+      photoProfile: 'user.jpg',
+      name: 'Evan Lindsey',
+      socmed: 'mubasyirmahdy',
+    },
+  },
+];
+
 export const DataCourse = [
   {
     id: '1',

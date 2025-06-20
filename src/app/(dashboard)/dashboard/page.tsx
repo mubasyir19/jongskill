@@ -1,5 +1,6 @@
+import PopularCard from '@/components/molecules/PopularCard';
 import UnfinishedCard from '@/components/organism/UnfinishedCard';
-import { unfinishedCourse } from '@/data/data';
+import { PopularCourse, unfinishedCourse } from '@/data/data';
 import Image from 'next/image';
 import React from 'react';
 
@@ -210,44 +211,16 @@ export default function MainDashboardPage() {
             </button>
           </div>
           <div className='mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4'>
-            <div className='bg-[var(--color-shades-100)] rounded-2xl p-6'>
-              <div className='flex items-center gap-5'>
-                <Image
-                  src={'/images/course-1.png'}
-                  width={50}
-                  height={50}
-                  alt='community'
-                  className='size-24 rounded-xl'
-                />
-                <div className='space-y-1'>
-                  <p className='text-lg text-[var(--color-title)] font-medium'>Evan Lindsey</p>
-                  <p className='text-sm text-[var(--color-paragraph)] font-medium'>Start: 17 April</p>
-                  <p className='text-base text-[var(--color-primary)] font-medium'>$159</p>
-                </div>
-              </div>
-              <p className='mt-2.5 text-sm md:text-base lg:text-lg xl:text-xl text-[var(--color-shades-600)] font-semibold'>
-                Digital Marketing Ethics: Navigating the Ethical Landscape
-              </p>
-            </div>
-            <div className='bg-[var(--color-shades-100)] rounded-2xl p-6'>
-              <div className='flex items-center gap-5'>
-                <Image
-                  src={'/images/course-1.png'}
-                  width={50}
-                  height={50}
-                  alt='community'
-                  className='size-24 rounded-xl'
-                />
-                <div className='space-y-1'>
-                  <p className='text-lg text-[var(--color-title)] font-medium'>Evan Lindsey</p>
-                  <p className='text-sm text-[var(--color-paragraph)] font-medium'>Start: 17 April</p>
-                  <p className='text-base text-[var(--color-primary)] font-medium'>$159</p>
-                </div>
-              </div>
-              <p className='mt-2.5 text-sm md:text-base lg:text-lg xl:text-xl text-[var(--color-shades-600)] font-semibold'>
-                Pay-Per-Click Powerhouse: Crafting Profitable Campaigns
-              </p>
-            </div>
+            {PopularCourse.map((pc) => (
+              <PopularCard
+                key={pc.id}
+                thumbnail={pc.thumbnail}
+                nameMentor={pc.mentor.name}
+                price={pc.price}
+                release='17 April'
+                titleCourse={pc.title}
+              />
+            ))}
           </div>
         </div>
         <div className='w-52 lg:w-60 xl:w-96'>
