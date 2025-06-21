@@ -1066,3 +1066,17 @@ export const DataCourse = [
     price: 370,
   },
 ];
+
+export const messages = [
+  'Halo! Ada yang bisa saya bantu?',
+  'Iya, saya mau tanya soal produk A.',
+  'Tentu, produk A tersedia dalam dua varian. Mau yang mana?',
+  'Yang varian premium. Apa saja kelebihannya?',
+  'Varian premium punya kapasitas lebih besar dan garansi 2 tahun.',
+  'Wah menarik! Harganya berapa ya?',
+  'Untuk varian premium, harganya Rp2.500.000.',
+  'Baik, saya pertimbangkan dulu ya.',
+  'Siap, silakan. Hubungi kami kapan saja!',
+  'Terima kasih 😊',
+  'Sama-sama 🙏',
+];
